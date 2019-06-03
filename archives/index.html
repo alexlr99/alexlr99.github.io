@@ -1,331 +1,271 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
+    <meta charset="utf-8">
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="//cdn.bootcss.com" />
+<link rel="dns-prefetch" href="//secure.gravatar.com" />
+<link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="Cache-Control" content="no-transform"/>
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<link rel="shortcut icon" href="https://alexlr99.github.io/favicon.ico?v=1559599247406">
 
-<title>文章归档 | Gridea</title>
-<meta name="description" content="温故而知新">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Gridea</title>
+<meta name="description" content="温故而知新" />
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://alexlr99.github.io/favicon.ico?v=1559599047830">
-<!--字体-->
-<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Libre+Barcode+39" rel="stylesheet">
-<!--主要CSS-->
+<link href="//cdn.bootcss.com/highlight.js/9.10.0/styles/atom-one-dark.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://alexlr99.github.io/styles/main.css">
-<style type="text/css">
-      .tilt{
-        margin: 0;
-        overflow: hidden;
-        width: 100vw;
-        height: 100vh;
-        background: #49beb7;
-        background: linear-gradient(to top left, #4CB8C4 -40%, #2196F3);
-        position:fixed;
-        top:0;
-        left:0;
-        z-index: 999 !important;
-      }
-      .container {
-        position: absolute;
-        top:0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 250px;
-        height: 250px;
-        margin: auto;
-      }
-
-      .part {
-        width: 250px;
-        position: absolute;
-      }
-
-      .svgpath {
-        fill: rgba(145,220,90,0);
-        stroke: aqua;
-        stroke-width: 1.5px;
-        stroke-dasharray: 1000;
-        stroke-linecap: round;
-        z-index: 2;
-      }
-
-      .svgbg {
-        fill: rgba(255,255,255,0.2);
-        z-index: 1;
-       }
-
-      #playload {
-        animation: dash 2.5s reverse ease-in-out infinite;
-      }
-
-      @keyframes dash {
-        to {
-          stroke-dashoffset: 2000;
-        }
-      }</style>
+<!--[if lt IE 9]>
+<script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
 
 
-
-
-<script src="https://alexlr99.github.io/media/dict/js/Vue.js"></script>
-<script src="https://alexlr99.github.io/media/dict/js/JQuery.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<link rel="stylesheet" href="https://alexlr99.github.io/media/dict/css/aos.css" />
-
-
-
-
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
   </head>
-  <body>
-    <div class="tilt">
-      <div class='container'>
-        <svg class='part' x="0px" y="0px" viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
-          <path class="svgpath" id="playload" d="M189.5,140.5c-6.6,29.1-32.6,50.9-63.7,50.9c-36.1,0-65.3-29.3-65.3-65.3
-        c0,0,17,0,23.5,0c10.4,0,6.6-45.9,11-46c5.2-0.1,3.6,94.8,7.4,94.8c4.1,0,4.1-92.9,8.2-92.9c4.1,0,4.1,83,8.1,83
-        c4.1,0,4.1-73.6,8.1-73.6c4.1,0,4.1,63.9,8.1,63.9c4.1,0,4.1-53.9,8.1-53.9c4.1,0,4.1,44.1,8.2,44.1c4.1,0,3.1-34.5,7.2-34.5
-        c4.1,0,3.1,24.6,7.2,24.6c4.1,0,2.5-14.5,5.2-14.5c2.2,0,0.8,5.1,4.2,4.9c0.4,0,13.1,0,13.1,0c0-34.4-27.9-62.3-62.3-62.3
-        c-27.4,0-50.7,17.7-59,42.3" />
-
-          <path class="svgbg" d="M61,126c0,0,16.4,0,23,0c10.4,0,6.6-45.9,11-46c5.2-0.1,3.6,94.8,7.4,94.8c4.1,0,4.1-92.9,8.2-92.9
-        c4.1,0,4.1,83,8.1,83c4.1,0,4.1-73.6,8.1-73.6c4.1,0,4.1,63.9,8.1,63.9c4.1,0,4.1-53.9,8.1-53.9c4.1,0,4.1,44.1,8.2,44.1
-        c4.1,0,3.1-34.5,7.2-34.5c4.1,0,3.1,24.6,7.2,24.6c4.1,0,2.5-14.5,5.2-14.5c2.2,0,0.8,5.1,4.2,4.9c0.4,0,22.5,0,23,0" />
-        </svg></div> 
-    </div>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-
-  <div class="overlay"></div>
-  <div class="top-container" data-aos="fade-right">
-    <!--头像-->
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://alexlr99.github.io">
-        <img src="https://alexlr99.github.io/images/avatar.png?v=1559599047830" class="site-logo">
-      </a>
-      <h1 class="site-title">
+  <body class="bg-grey" gtools_scp_screen_capture_injected="true">
+    <header id="header" class="header bg-white">
+    <div class="navbar-container">
+        <a href="https://alexlr99.github.io" class="navbar-logo">
+            <img src="https://alexlr99.github.io/images/avatar.png?v=1559599247406" alt="Gridea" />
             Gridea
-            <p></p>
-        </h1>
-    </div>
-    <!--导航-->
-    <div class="top-header-nav">
-
-
-      
-        
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="site-nav">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="site-nav">
-            关于
-          </a>
-        
-      
-    </div>
-    <div class="icons">
-        <ul>
-          <li v-for="(le,index) in alin.like">
-            <a :href="le.aim" :alt="le.alt">
-              <img :src="le.src" />
-            </a>
-          </li>
-        </ul>
-    </div> 
-
-  </div>
-
-
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-      <div class="site-footer">
-          Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-      </div>
-      <div class="site-description">
-          <p><a href="#">温故而知新</a></p>
-          <p>
-            
-            <span>&nbsp;</span>
-            Powered by <a href="https://gridea.dev">Gridea</a>
-            <span>•</span>Theme <a href="http://www.itaolaity.com/">Alin</a>
-          </p>
-      </div>
-  </div>
-</div>
-
-
-
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
+        </a>
+        <div class="navbar-menu">
           
-
-          <h2 class="archives-title">文章归档</h2>
-          <div class="archives-container">
             
-              <h2 class="year" data-aos="fade-in" data-aos-delay="500">2018</h2>
-
-
-              
-                
-                  <article class="post">
-                    <a href="https://alexlr99.github.io/post/hello-gridea">
-                      <h2 class="post-title">
-                        <span>2018-12-11</span>
-                        Hello Gridea
-                      </h2>
-
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://alexlr99.github.io/post/【Mac漫画阅读器】【Simple Comic 1.7.1 汉化版】">
-                      <h2 class="post-title">
-                        <span>2018-12-10</span>
-                        【Mac漫画阅读器】【Simple Comic 1.7.1 汉化版】
-                      </h2>
-
-                    </a>
-                  </article>
-                
-              
-                
-              
-                
-              
+              <a href="/">首页</a>
             
-              <h2 class="year" data-aos="fade-in" data-aos-delay="500">2016</h2>
-
-
-              
-                
-              
-                
-              
-                
-                  <article class="post">
-                    <a href="https://alexlr99.github.io/post/欧路词典的OCR取词功能">
-                      <h2 class="post-title">
-                        <span>2016-03-14</span>
-                        欧路词典的OCR取词功能
-                      </h2>
-
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://alexlr99.github.io/post/Simple Comic——Mac看漫画必备">
-                      <h2 class="post-title">
-                        <span>2016-03-14</span>
-                        Simple Comic——Mac看漫画必备
-                      </h2>
-
-                    </a>
-                  </article>
-                
-              
+          
             
-          </div>
-
-          <div class="pagination-container">
-  
-  
-</div>
-
+              <a href="/archives">归档</a>
+            
+          
+            
+              <a href="/tags">标签</a>
+            
+          
+            
+              <a href="/post/about">关于</a>
+            
+          
         </div>
-      </div>
+        <div class="navbar-mobile-menu" onclick="">
+            <span class="icon-menu cross"><span class="middle"></span></span>
+            <ul>
+              
+                
+                  <li><a href="/">首页</a></li>
+                
+              
+                
+                  <li><a href="/archives">归档</a></li>
+                
+              
+                
+                  <li><a href="/tags">标签</a></li>
+                
+              
+                
+                  <li><a href="/post/about">关于</a></li>
+                
+              
+            </ul>
+        </div>
+    </div>
+</header>
+
+
+    <div class="main-content archive-page clearfix">
+        <div class="categorys-item">
+            
+            
+              <div class="categorys-title">2018</div>
+              <div class="post-lists">
+                <div class="post-lists-body">
+                    
+                      
+                        <div class="post-list-item">
+                            <div class="post-list-item-container">
+                                <div class="item-label">
+                                    <div class="item-title">
+                                        <a href="https://alexlr99.github.io/post/hello-gridea">Hello Gridea</a>
+                                    </div>
+                                    <div class="item-meta clearfix">
+                                        <div class="item-meta-date">2018-12-11</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                    
+                      
+                        <div class="post-list-item">
+                            <div class="post-list-item-container">
+                                <div class="item-label">
+                                    <div class="item-title">
+                                        <a href="https://alexlr99.github.io/post/【Mac漫画阅读器】【Simple Comic 1.7.1 汉化版】">【Mac漫画阅读器】【Simple Comic 1.7.1 汉化版】</a>
+                                    </div>
+                                    <div class="item-meta clearfix">
+                                        <div class="item-meta-date">2018-12-10</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                    
+                      
+                    
+                      
+                    
+                </div>
+            </div>
+            
+              <div class="categorys-title">2016</div>
+              <div class="post-lists">
+                <div class="post-lists-body">
+                    
+                      
+                    
+                      
+                    
+                      
+                        <div class="post-list-item">
+                            <div class="post-list-item-container">
+                                <div class="item-label">
+                                    <div class="item-title">
+                                        <a href="https://alexlr99.github.io/post/欧路词典的OCR取词功能">欧路词典的OCR取词功能</a>
+                                    </div>
+                                    <div class="item-meta clearfix">
+                                        <div class="item-meta-date">2016-03-14</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                    
+                      
+                        <div class="post-list-item">
+                            <div class="post-list-item-container">
+                                <div class="item-label">
+                                    <div class="item-title">
+                                        <a href="https://alexlr99.github.io/post/Simple Comic——Mac看漫画必备">Simple Comic——Mac看漫画必备</a>
+                                    </div>
+                                    <div class="item-meta clearfix">
+                                        <div class="item-meta-date">2016-03-14</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                    
+                </div>
+            </div>
+            
+        </div>
     </div>
 
-    <footer>
-	<div class="foo-con">
-    	<p><a href="#">温故而知新</a></p>
-      	<p>
-	        
-	        <span>&nbsp;</span>
-	        Powered by <a href="https://gridea.dev">Gridea</a>
-	        <span>•</span>Theme <a href="http://www.itaolaity.com/">Alin</a>
-     	</p>
-    </div>
+    <footer id="footer" class="footer bg-white">
+	<div class="footer-social">
+		<div class="footer-container clearfix">
+			<div class="social-list">
+        
+          
+            <a class="social" href="" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          
+        
+          
+            <a class="social" href="" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          
+        
+          
+            <a class="social" href="" target="_blank">
+              <i class="fab fa-weibo"></i>
+            </a>
+          
+        
+          
+            <a class="social" href="" target="_blank">
+              <i class="fab fa-zhihu"></i>
+            </a>
+          
+        
+          
+            <a class="social" href="" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+          
+        
+      </div>
+		</div>
+	</div>
+	<div class="footer-meta">
+		<div class="footer-container">
+			<div class="meta-item meta-copyright">
+				<div class="meta-copyright-info">
+          <a href="https://alexlr99.github.io" class="info-logo">
+            Gridea
+          </a>
+					<div class="info-text">
+              <p id="chakhsu"></p>
+            <p>Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a></p>
+          </div>
+				</div>
+        </div>
+        <div class="meta-item meta-posts">
+            <h3 class="meta-title">最近文章</h3>
+            
+              
+                <li><a href="https://alexlr99.github.io/post/hello-gridea">Hello Gridea</a></li>
+              
+            
+              
+                <li><a href="https://alexlr99.github.io/post/【Mac漫画阅读器】【Simple Comic 1.7.1 汉化版】">【Mac漫画阅读器】【Simple Comic 1.7.1 汉化版】</a></li>
+              
+            
+              
+                <li><a href="https://alexlr99.github.io/post/欧路词典的OCR取词功能">欧路词典的OCR取词功能</a></li>
+              
+            
+              
+                <li><a href="https://alexlr99.github.io/post/Simple Comic——Mac看漫画必备">Simple Comic——Mac看漫画必备</a></li>
+              
+            
+        </div>
+		</div>
+	</div>
 </footer>
 
+    <script src="//cdn.bootcss.com/headroom/0.9.1/headroom.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/highlight.min.js"></script>
 
-
-<script src="https://alexlr99.github.io/media/dict/js/aos.js"></script>
-
-<!--Self-->
 <script>
-    $(window).on('load',function(){ 
-  　　$('.tilt').fadeOut(1000);
-　　}); 
-</script>
 
 
-<script type="application/javascript">
-
-/*动画初始化*/
-AOS.init(
-  {
-  offset: 200,
-  duration: 600,
-  easing: 'ease-in-sine',
-  delay: 100,
-  }
-);
-
-/*代码高亮*/
-hljs.initHighlightingOnLoad()
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible:false,
-    alin:{
-      like:[
-          {
-            "alt":"我的博客",
-            "aim":"http://www.itaolaity.com/index.php",
-            "src":"http://itaolaity.com/20190429220545.png"
-          },
-          {
-            "alt":"GitHub",
-            "aim":"https://github.com/taoya7",
-            "src":"http://itaolaity.com/20190429220612.png"
-          },
-          {
-            "alt":"Email",
-            "aim":"mailto:569781231@qq.com",
-            "src":"http://itaolaity.com/20190429220636.png"
-          }
-      ]
+var header = new Headroom(document.getElementById("header"), {
+    tolerance: 0,
+    offset : 70,
+    classes: {
+      initial: "animated",
+      pinned: "slideDown",
+      unpinned: "slideUp"
     }
-  }
 });
-
+header.init();
 </script>
-
-
-
-
-
+<script>
+var words = [].split(',').map(item => item.trim());
+var chakhsu = function(r){function t(){return b[Math.floor(Math.random()*b.length)]}function e(){return String.fromCharCode(94*Math.random()+33)}function n(r){for(var n=document.createDocumentFragment(),i=0;r>i;i++){var l=document.createElement("span");l.textContent=e(),l.style.color=t(),n.appendChild(l)}return n}function i(){var t=o[c.skillI];c.step?c.step--:(c.step=g,c.prefixP<l.length?(c.prefixP>=0&&(c.text+=l[c.prefixP]),c.prefixP++):"forward"===c.direction?c.skillP<t.length?(c.text+=t[c.skillP],c.skillP++):c.delay?c.delay--:(c.direction="backward",c.delay=a):c.skillP>0?(c.text=c.text.slice(0,-1),c.skillP--):(c.skillI=(c.skillI+1)%o.length,c.direction="forward")),r.textContent=c.text,r.appendChild(n(c.prefixP<l.length?Math.min(s,s+c.prefixP):Math.min(s,t.length-c.skillP))),setTimeout(i,d)}var l="I work with ",o=words.map(function(r){return r+"."}),a=2,g=1,s=5,d=75,b=["rgb(110,64,170)","rgb(150,61,179)","rgb(191,60,175)","rgb(228,65,157)","rgb(254,75,131)","rgb(255,94,99)","rgb(255,120,71)","rgb(251,150,51)","rgb(226,183,47)","rgb(198,214,60)","rgb(175,240,91)","rgb(127,246,88)","rgb(82,246,103)","rgb(48,239,130)","rgb(29,223,163)","rgb(26,199,194)","rgb(35,171,216)","rgb(54,140,225)","rgb(76,110,219)","rgb(96,84,200)"],c={text:"",prefixP:-s,skillI:0,skillP:0,direction:"forward",delay:a,step:g};i()};chakhsu(document.getElementById('chakhsu')); if ('addEventListener' in document) { document.addEventListener('DOMContentLoaded', function() { FastClick.attach(document.body); }, false); }
+</script>
 
   </body>
 </html>
