@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://alexlr99.github.io/</id>
+    <id>https://alexlr99.github.io</id>
     <title>Gridea</title>
-    <updated>2019-06-03T21:55:53.863Z</updated>
+    <updated>2019-06-03T21:57:32.026Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://alexlr99.github.io/"/>
-    <link rel="self" href="https://alexlr99.github.io//atom.xml"/>
+    <link rel="alternate" href="https://alexlr99.github.io"/>
+    <link rel="self" href="https://alexlr99.github.io/atom.xml"/>
     <subtitle>温故而知新</subtitle>
-    <logo>https://alexlr99.github.io//images/avatar.png</logo>
-    <icon>https://alexlr99.github.io//favicon.ico</icon>
+    <logo>https://alexlr99.github.io/images/avatar.png</logo>
+    <icon>https://alexlr99.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, Gridea</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://alexlr99.github.io//post/hello-gridea</id>
-        <link href="https://alexlr99.github.io//post/hello-gridea">
+        <id>https://alexlr99.github.io/post/hello-gridea</id>
+        <link href="https://alexlr99.github.io/post/hello-gridea">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
@@ -44,8 +44,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[【Mac漫画阅读器】【Simple Comic 1.7.1 汉化版】]]></title>
-        <id>https://alexlr99.github.io//post/【Mac漫画阅读器】【Simple Comic 1.7.1 汉化版】</id>
-        <link href="https://alexlr99.github.io//post/【Mac漫画阅读器】【Simple Comic 1.7.1 汉化版】">
+        <id>https://alexlr99.github.io/post/【Mac漫画阅读器】【Simple Comic 1.7.1 汉化版】</id>
+        <link href="https://alexlr99.github.io/post/【Mac漫画阅读器】【Simple Comic 1.7.1 汉化版】">
         </link>
         <updated>2018-12-10T21:56:29.000Z</updated>
         <summary type="html"><![CDATA[<p>我……终于想起开源软件是公开代码可以自己编译的了。</p>
@@ -71,8 +71,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[欧路词典的OCR取词功能]]></title>
-        <id>https://alexlr99.github.io//post/欧路词典的OCR取词功能</id>
-        <link href="https://alexlr99.github.io//post/欧路词典的OCR取词功能">
+        <id>https://alexlr99.github.io/post/欧路词典的OCR取词功能</id>
+        <link href="https://alexlr99.github.io/post/欧路词典的OCR取词功能">
         </link>
         <updated>2016-03-15T00:56:29.000Z</updated>
         <summary type="html"><![CDATA[<h2 id="在mac-app-store购买">在Mac App Store购买</h2>
@@ -94,8 +94,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Simple Comic——Mac看漫画必备]]></title>
-        <id>https://alexlr99.github.io//post/Simple Comic——Mac看漫画必备</id>
-        <link href="https://alexlr99.github.io//post/Simple Comic——Mac看漫画必备">
+        <id>https://alexlr99.github.io/post/Simple Comic——Mac看漫画必备</id>
+        <link href="https://alexlr99.github.io/post/Simple Comic——Mac看漫画必备">
         </link>
         <updated>2016-03-14T23:56:29.000Z</updated>
         <summary type="html"><![CDATA[<h2 id="simple-comic介绍">Simple Comic介绍</h2>
