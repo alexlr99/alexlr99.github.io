@@ -7,192 +7,65 @@
 <meta name="description" content="温故而知新">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://alexlr99.github.io/favicon.ico?v=1559599502028">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
+<link rel="shortcut icon" href="https://alexlr99.github.io/favicon.ico?v=1559599893937">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://alexlr99.github.io/styles/main.css">
 
 
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
+
   </head>
   <body>
-    <nav class="navbar border fixed split-nav">
-  <div class="nav-brand">
-    <h3><a href="https://alexlr99.github.io">Gridea</a></h3>
-  </div>
-  <div class="collapsible">
-    <input id="collapsible1" type="checkbox" name="collapsible1">
-    <button>
-      <label for="collapsible1">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </label>
-    </button>
-    <div class="collapsible-body">
-      <ul class="inline">
-        
-          <li>
-            
-              <a href="/" class="menu">
-                首页
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/archives" class="menu">
-                归档
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/tags" class="menu">
-                标签
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/post/about" class="menu">
-                关于
-              </a>
-            
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
+    <div id="app" class="main">
 
-    <div id="top" class="row site">
-      <div class="sm-12 md-8 col">
-        <div class="paper">
-          <h2 class="current-tag">标签: Mac</h2>
-          
-  <article class="article">
-    <h2 class="article-title">
-      <a href="https://alexlr99.github.io/post/【Mac漫画阅读器】【Simple Comic 1.7.1 汉化版】">【Mac漫画阅读器】【Simple Comic 1.7.1 汉化版】</a>
-    </h2>
-    <p class="article-meta">
-      2018-12-10
-      
-        <a href="https://alexlr99.github.io/tag/simple-comic" class="badge secondary">
-          Simple Comic
-        </a>
-      
-        <a href="https://alexlr99.github.io/tag/mac" class="badge success">
-          Mac
-        </a>
-      
-    </p>
-    <p class="text-lead">
-      <p>我……终于想起开源软件是公开代码可以自己编译的了。</p>
-<p>好了这是我给Simple Comic增加了简繁中文支持的版本。感谢Xcode。繁化有待优化，只用了简繁转换。</p>
-<p>已提Pull Request等待作者合并本地化。</p>
-<p>下载地址见：</p>
-<p><a href="https://github.com/alicewish/Simple-Comic/releases">https://github.com/alicewish/Simple-Comic/releases</a></p>
-<p>在El Capitan上测试通过，在Mojave上自定义工具栏有bug。</p>
-<p>其他Mac漫画阅读器不开源，而且我买了以后还觉得不如Simple Comic用着舒服。</p>
-<p><img src="https://wx3.sinaimg.cn/large/6a9fdecaly1fy3zwfrhquj20e80e8q4n.jpg" alt=""></p>
-
-    </p>
-    <div class="row">
-      <a href="https://alexlr99.github.io/post/【Mac漫画阅读器】【Simple Comic 1.7.1 汉化版】" class="readmore-link">
-        <button>
-          Read More
-        </button>
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://alexlr99.github.io">
+        <img src="https://alexlr99.github.io/images/avatar.png?v=1559599893937" class="site-logo">
+        <h1 class="site-title">Gridea</h1>
       </a>
-    </div>
-  </article>
-
-  <article class="article">
-    <h2 class="article-title">
-      <a href="https://alexlr99.github.io/post/欧路词典的OCR取词功能">欧路词典的OCR取词功能</a>
-    </h2>
-    <p class="article-meta">
-      2016-03-14
-      
-        <a href="https://alexlr99.github.io/tag/mac" class="badge warning">
-          Mac
-        </a>
-      
-        <a href="https://alexlr99.github.io/tag/ou-lu-ci-dian" class="badge secondary">
-          欧路词典
-        </a>
-      
-    </p>
-    <p class="text-lead">
-      <h2 id="在mac-app-store购买">在Mac App Store购买</h2>
-<p><img src="https://wx1.sinaimg.cn/large/6a9fdecaly1frwucce3pvj219y0xkahg.jpg" alt=""></p>
-
-    </p>
-    <div class="row">
-      <a href="https://alexlr99.github.io/post/欧路词典的OCR取词功能" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
-
-  <article class="article">
-    <h2 class="article-title">
-      <a href="https://alexlr99.github.io/post/Simple Comic——Mac看漫画必备">Simple Comic——Mac看漫画必备</a>
-    </h2>
-    <p class="article-meta">
-      2016-03-14
-      
-        <a href="https://alexlr99.github.io/tag/simple-comic" class="badge secondary">
-          Simple Comic
-        </a>
-      
-        <a href="https://alexlr99.github.io/tag/mac" class="badge success">
-          Mac
-        </a>
-      
-    </p>
-    <p class="text-lead">
-      <h2 id="simple-comic介绍">Simple Comic介绍</h2>
-<p>旨在对Mac上阅读漫画简化过程优化体验的开源软件。2013年后未再更新，但稳定好用，这点和MangaMeeya近似。可以给开发者捐赠。</p>
-<p>并没有汉化。不过操作简洁明了，英文不是问题。</p>
-<h2 id="simple-comic体验">Simple Comic体验</h2>
-<h3 id="app图标">App图标</h3>
-<p><img src="https://wx1.sinaimg.cn/large/6a9fdecaly1frwucs1rz8j2068064t9c.jpg" alt=""></p>
-
-    </p>
-    <div class="row">
-      <a href="https://alexlr99.github.io/post/Simple Comic——Mac看漫画必备" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
-
-
-        </div>
-        <div class="row flex-edges">
-  
-  
-</div>
-
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
       </div>
-      <div class="sm-12 md-4 col sidebar">
-  <div class="paper info-container">
-    <img src="https://alexlr99.github.io/images/avatar.png?v=1559599502028" class="no-responsive avatar">
-    <div class="text-muted">温故而知新</div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
     <div class="social-container">
       
         
@@ -206,70 +79,89 @@
         
       
     </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      最新文章
+    <div class="site-description">
+      温故而知新
     </div>
-    <div class="row">
-      <ul>
-        
-          
-            <li>
-              <a href="https://alexlr99.github.io/post/hello-gridea">Hello Gridea</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://alexlr99.github.io/post/【Mac漫画阅读器】【Simple Comic 1.7.1 汉化版】">【Mac漫画阅读器】【Simple Comic 1.7.1 汉化版】</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://alexlr99.github.io/post/欧路词典的OCR取词功能">欧路词典的OCR取词功能</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://alexlr99.github.io/post/Simple Comic——Mac看漫画必备">Simple Comic——Mac看漫画必备</a>
-            </li>
-          
-        
-      </ul>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://alexlr99.github.io/atom.xml" target="_blank">RSS</a>
     </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      标签列表
-    </div>
-    <div class="row">
-      
-        <a href="https://alexlr99.github.io/tag/gridea" class="badge secondary">
-          Gridea
-        </a>
-      
-        <a href="https://alexlr99.github.io/tag/simple-comic" class="badge secondary">
-          Simple Comic
-        </a>
-      
-        <a href="https://alexlr99.github.io/tag/mac" class="badge secondary">
-          Mac
-        </a>
-      
-        <a href="https://alexlr99.github.io/tag/ou-lu-ci-dian" class="badge ">
-          欧路词典
-        </a>
-      
-    </div>
-  </div>
-  <div class="paper">
-    Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://alexlr99.github.io/atom.xml" target="_blank">RSS</a>
   </div>
 </div>
 
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <h2 class="current-tag">标签: Mac</h2>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://alexlr99.github.io/post/【Mac漫画阅读器】【Simple Comic 1.7.1 汉化版】">
+                  <h2 class="post-title">【Mac漫画阅读器】【Simple Comic 1.7.1 汉化版】</h2>
+                </a>
+                <div class="post-date">
+                  2018-12-10
+                </div>
+                <div class="post-abstract">
+                  <p>我……终于想起开源软件是公开代码可以自己编译的了。</p>
+<p>好了这是我给Simple Comic增加了简繁中文支持的版本。感谢Xcode。繁化有待优化，只用了简繁转换。</p>
+<p>已提Pull Request等待作者合并本地化。</p>
+<p>下载地址见：</p>
+<p><a href="https://github.com/alicewish/Simple-Comic/releases">https://github.com/alicewish/Simple-Comic/releases</a></p>
+<p>在El Capitan上测试通过，在Mojave上自定义工具栏有bug。</p>
+<p>其他Mac漫画阅读器不开源，而且我买了以后还觉得不如Simple Comic用着舒服。</p>
+<p><img src="https://wx3.sinaimg.cn/large/6a9fdecaly1fy3zwfrhquj20e80e8q4n.jpg" alt=""></p>
+
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://alexlr99.github.io/post/欧路词典的OCR取词功能">
+                  <h2 class="post-title">欧路词典的OCR取词功能</h2>
+                </a>
+                <div class="post-date">
+                  2016-03-14
+                </div>
+                <div class="post-abstract">
+                  <h2 id="在mac-app-store购买">在Mac App Store购买</h2>
+<p><img src="https://wx1.sinaimg.cn/large/6a9fdecaly1frwucce3pvj219y0xkahg.jpg" alt=""></p>
+
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://alexlr99.github.io/post/Simple Comic——Mac看漫画必备">
+                  <h2 class="post-title">Simple Comic——Mac看漫画必备</h2>
+                </a>
+                <div class="post-date">
+                  2016-03-14
+                </div>
+                <div class="post-abstract">
+                  <h2 id="simple-comic介绍">Simple Comic介绍</h2>
+<p>旨在对Mac上阅读漫画简化过程优化体验的开源软件。2013年后未再更新，但稳定好用，这点和MangaMeeya近似。可以给开发者捐赠。</p>
+<p>并没有汉化。不过操作简洁明了，英文不是问题。</p>
+<h2 id="simple-comic体验">Simple Comic体验</h2>
+<h3 id="app图标">App图标</h3>
+<p><img src="https://wx1.sinaimg.cn/large/6a9fdecaly1frwucs1rz8j2068064t9c.jpg" alt=""></p>
+
+                </div>
+              </div>
+              
+            </article>
+          
+
+          <div class="pagination-container">
+  
+  
+</div>
+
+        </div>
+      </div>
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -279,6 +171,13 @@
 AOS.init();
 
 hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
 
