@@ -458,6 +458,11 @@ a {
   padding: 24px 0;
   color: #adb5bd;
 }
+.post-detail .post-view {
+  font-size: 18px;
+  padding: 24px 0;
+  color: #adb5bd;
+}
 .post-detail .post-content h1,
 .post-detail .post-content h2,
 .post-detail .post-content h3,
