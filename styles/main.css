@@ -455,12 +455,12 @@ a {
 }
 .post-detail .post-date {
   font-size: 18px;
-  padding: 24px 0;
+  padding: 12px 0;
   color: #adb5bd;
 }
 .post-detail .post-view {
   font-size: 18px;
-  padding: 24px 0;
+  padding: 12px 0;
   color: #adb5bd;
 }
 .post-detail .post-content h1,
@@ -726,7 +726,11 @@ a {
   }
   .post-detail .post-date {
     font-size: 16px;
-    padding: 16px 0;
+    padding: 8px 0;
+  }
+  .post-detail .post-view {
+    font-size: 16px;
+    padding: 8px 0;
   }
   .post-detail .feature-container {
     margin-bottom: 16px;
